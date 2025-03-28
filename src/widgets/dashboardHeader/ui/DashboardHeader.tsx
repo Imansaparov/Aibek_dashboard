@@ -32,7 +32,7 @@ const DashboardHeader: FunctionComponent<DashboardHeaderProps> = ({
 
   return (
     <header
-      className={`self-stretch flex flex-col items-start justify-start gap-[21px] max-w-full text-left text-lg text-white font-inter ${className}`}
+      className={`self-stretch flex flex-col items-start justify-start gap-[21px] max-w-full text-left text-lg text-white font-inter`}
     >
       <Box
         className="self-stretch flex flex-row items-center justify-between w-full max-w-full"

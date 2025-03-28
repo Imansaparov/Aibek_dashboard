@@ -73,7 +73,7 @@ const Dropdown: FunctionComponent<DropdownProps> = ({
     <Box
       ref={dropdownRef}
       onClick={handleToggle}
-      className={`relative rounded-3xs bg-[#1a111d] flex flex-row items-center justify-between cursor-pointer ${className}`}
+      className={`relative rounded-3xs bg-[#1a111d] flex flex-row items-center justify-between cursor-pointer`}
       sx={{
         width: isLessThan1280 ? '280px' : '350px',
         height: '41px', // Fixed height to match original 41px

@@ -48,7 +48,6 @@ const NavItem: FunctionComponent<NavItemProps> = ({
 };
 
 const LeftSidebar: FunctionComponent<LeftSidebarType> = ({
-  className = '',
   isOpen,
   onClose,
 }) => {
@@ -98,7 +97,7 @@ const LeftSidebar: FunctionComponent<LeftSidebarType> = ({
 
   return (
     <Box
-      className={`shadow-[-1.5px_0px_0px_rgba(255,_255,_255,_0.15)_inset] w-[100px] z-10 fixed inset-y-0 left-0 bg-gray-200 overflow-y-auto flex flex-col items-center justify-between py-[30px] px-[18px] box-border gap-8 max-w-[90%] mq750:pt-16 mq750:box-border mq1100:pt-[99px] mq1100:pb-5 mq1100:box-border ${className}`}
+      className={`shadow-[-1.5px_0px_0px_rgba(255,_255,_255,_0.15)_inset] w-[100px] z-10 fixed inset-y-0 left-0 bg-gray-200 overflow-y-auto flex flex-col items-center justify-between py-[30px] px-[18px] box-border gap-8 max-w-[90%] mq750:pt-16 mq750:box-border mq1100:pt-[99px] mq1100:pb-5 mq1100:box-border`}
     >
       {/* Back button - only show on screens <1400px */}
       {isSmallScreen && (

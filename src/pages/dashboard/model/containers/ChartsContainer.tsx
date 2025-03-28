@@ -11,11 +11,7 @@ import UserMetrics from '@/pages/dashboard/model/components/UserMetrics';
 import QuestionsMetrics from '@/pages/dashboard/model/components/QuestionsMetrics';
 import TopicsContainer from '@/pages/dashboard/model/containers/TopicsContainer';
 
-export type ChartsType = {
-  className?: string;
-};
-
-const ChartsContainer: FunctionComponent<ChartsType> = ({ className = '' }) => {
+const ChartsContainer = () => {
   const theme = useTheme();
   const isSmallLaptop = useMediaQuery('(max-width:1024px)');
   const isBelow1275 = useMediaQuery('(max-width:1275px)');
@@ -24,7 +20,7 @@ const ChartsContainer: FunctionComponent<ChartsType> = ({ className = '' }) => {
   if (!isBelow1275) {
     return (
       <Box
-        className={`self-stretch flex flex-row items-start justify-between gap-6 max-w-full text-left text-16xl text-white font-fira-sans mq750:gap-4 mq1100:pl-2 mq1100:pr-2 mq1100:box-border ${className}`}
+        className={`self-stretch flex flex-row items-start justify-between gap-6 max-w-full text-left text-16xl text-white font-fira-sans mq750:gap-4 mq1100:pl-2 mq1100:pr-2 mq1100:box-border `}
       >
         <Box className="w-[302px] flex flex-col items-start justify-start pt-[35px] px-0 pb-0 box-border mq450:pt-[15px] mq450:box-border mq750:pt-6 mq750:box-border">
           <Box className="self-stretch flex flex-col items-end justify-start gap-[65px] mq450:gap-[35px]">
@@ -51,7 +47,7 @@ const ChartsContainer: FunctionComponent<ChartsType> = ({ className = '' }) => {
   // Modified component below 1275px - centered with preserved text styles
   return (
     <Box
-      className={`self-stretch text-left text-16xl text-white font-fira-sans ${className}`}
+      className={`self-stretch text-left text-16xl text-white font-fira-sans`}
       sx={{
         display: 'flex',
         flexDirection: 'column',

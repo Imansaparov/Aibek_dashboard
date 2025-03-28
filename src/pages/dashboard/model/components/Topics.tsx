@@ -17,7 +17,6 @@ export type TopicsType = {
 };
 
 const Topics: FunctionComponent<TopicsType> = ({
-  className = '',
   topics2Padding,
   completedTopicsHeadersPadding,
   iconMessageOutline,
@@ -49,7 +48,7 @@ const Topics: FunctionComponent<TopicsType> = ({
 
   return (
     <Box
-      className={`flex-1 rounded-xl bg-darkslategray overflow-hidden flex flex-col items-start justify-start py-[31px] px-[18px] box-border gap-[23px] min-w-[240px] h-[198px] text-left text-base text-white font-fira-sans ${className}`}
+      className={`flex-1 rounded-xl bg-darkslategray overflow-hidden flex flex-col items-start justify-start py-[31px] px-[18px] box-border gap-[23px] min-w-[240px] h-[198px] text-left text-base text-white font-fira-sans`}
       style={topics2Style}
     >
       <Box

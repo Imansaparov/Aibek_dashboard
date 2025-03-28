@@ -47,11 +47,7 @@ export const StatisticsDropdown: FunctionComponent = () => {
         }}
         className="text-base text-dimgray"
       >
-        <DateRangePicker
-          title="Период: "
-          onChange={handleDateRangeChange}
-          className="dropdown-responsive"
-        />
+        <DateRangePicker title="Период: " onChange={handleDateRangeChange} />
         <Dropdown
           title="Тематика обращения:"
           options={['все', 'продажи', 'техподдержка', 'возвраты', 'другое']}

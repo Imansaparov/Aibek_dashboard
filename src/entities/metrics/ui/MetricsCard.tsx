@@ -15,7 +15,6 @@ export type GroupComponentType = {
 };
 
 const MetricsCard: FunctionComponent<GroupComponentType> = ({
-  className = '',
   icon,
   metricLabel,
   metricLabelWidth,
@@ -49,7 +48,7 @@ const MetricsCard: FunctionComponent<GroupComponentType> = ({
 
   return (
     <Box
-      className={`h-[213px] flex flex-col items-end justify-start text-left text-16xl text-white font-fira-sans ${className}`}
+      className={`h-[213px] flex flex-col items-end justify-start text-left text-16xl text-white font-fira-sans`}
       sx={{ width: cardWidth }}
     >
       <Box

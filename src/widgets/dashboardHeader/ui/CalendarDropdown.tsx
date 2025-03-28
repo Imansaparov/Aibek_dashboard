@@ -7,14 +7,12 @@ import { ru } from 'date-fns/locale';
 import ArrowFullDown from '@/assets/images/ArrowDown.svg';
 
 export type DateRangePickerProps = {
-  className?: string;
   iconArrowFullDown?: string;
   title?: string;
   onChange?: (startDate: string, endDate: string) => void;
 };
 
 const DateRangePicker: FunctionComponent<DateRangePickerProps> = ({
-  className = '',
   iconArrowFullDown,
   title = 'Период:',
   onChange,
@@ -246,7 +244,7 @@ const DateRangePicker: FunctionComponent<DateRangePickerProps> = ({
       <style>{customStyles}</style>
       <Box
         ref={dropdownRef}
-        className={`relative rounded-3xs bg-[#1a111d] flex flex-row items-center justify-between cursor-pointer ${className}`}
+        className={`relative rounded-3xs bg-[#1a111d] flex flex-row items-center justify-between cursor-pointer dropdown-responsive`}
         sx={{
           width: isLessThan1280 ? '280px' : '350px',
           height: '41px',
